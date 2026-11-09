@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gatherly - your campus mehfil: events, societies, chai and shayari.">
+  <title>Contact & Event Proposal | Gatherly</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Rozha+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.svg" alt="Gatherly logo" class="brand-logo"> <span class="brand-text">Gatherly<small lang="ur" dir="rtl">محفل</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle ms-lg-3" type="button" onclick="toggleTheme()" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero"><div class="container"><span class="eyebrow">LET'S CREATE SOMETHING GREAT</span><h1>Contact & <em>Event Proposal</em></h1><p>Have an idea for campus? Tell us about it and take the first step.</p></div><img class="page-hero-deco" src="images/art/rickshaw.svg" alt="" aria-hidden="true"></header>
+<section class="container section-space">
+  <div class="row g-5 align-items-start">
+    <div class="col-lg-5">
+      <span class="eyebrow text-emerald">SAY HELLO</span><h2>We'd love to<br><em>hear from you.</em></h2>
+      <p>Reach out to the university Events Team for information about events, societies and organizing activities.</p>
+      <div class="contact-detail"><span>✉</span><div><strong>Email</strong><br><a href="mailto:events@university.edu.pk">events@university.edu.pk</a></div></div>
+      <div class="contact-detail"><span>⌖</span><div><strong>Location</strong><br>National University of Sciences and Technology, Islamabad, Pakistan</div></div>
+      <div class="contact-detail"><span>☎</span><div><strong>Phone</strong><br><a href="tel:+92519000000">+92 51 9000000</a></div></div>
+      <h3 class="mt-4">Find the campus</h3>
+      <div class="map-frame"><iframe title="Map showing NUST Islamabad" src="https://www.google.com/maps?q=NUST%20Islamabad&output=embed" width="100%" height="280" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <div class="col-lg-7">
+      <form id="proposalForm" class="proposal-form" novalidate>
+        <span class="eyebrow text-emerald">YOUR IDEA STARTS HERE</span><h2>Propose an <em>event.</em></h2>
+        <div class="row g-3">
+          <div class="col-md-6"><label for="name" class="form-label">Full Name *</label><input type="text" class="form-control" id="name" name="name" required></div>
+          <div class="col-md-6"><label for="email" class="form-label">Email Address *</label><input type="email" class="form-control" id="email" name="email" required></div>
+          <div class="col-md-6"><label for="society" class="form-label">Society / Department *</label><input type="text" class="form-control" id="society" name="society" required></div>
+          <div class="col-md-6"><label for="eventTitle" class="form-label">Event Title *</label><input type="text" class="form-control" id="eventTitle" name="eventTitle" required></div>
+          <div class="col-md-6"><label for="category" class="form-label">Event Category *</label><select class="form-select" id="category" name="category" required><option value="">Choose category</option><option>Academic</option><option>Cultural</option><option>Sports</option><option>Career</option><option>Other</option></select></div>
+          <div class="col-md-6"><label for="eventDate" class="form-label">Proposed Date *</label><input type="date" class="form-control" id="eventDate" name="eventDate" required></div>
+          <div class="col-12"><label for="venue" class="form-label">Preferred Venue *</label><input type="text" class="form-control" id="venue" name="venue" required></div>
+          <div class="col-12"><label for="description" class="form-label">Event Description *</label><textarea class="form-control" id="description" name="description" rows="4" required></textarea></div>
+          <div class="col-12"><button type="submit" class="btn btn-wine btn-lg">Submit Proposal ↗</button><p id="successMessage" class="form-message mt-3 mb-0" role="status" aria-live="polite"></p></div>
+        </div>
+      </form>
+      <p class="small text-muted mt-3">Demo form: this front-end project validates your details and displays a confirmation. It does not send or store submissions on a server.</p>
+    </div>
+  </div>
+</section>
+
+<div class="truck-stripe" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container text-center">
+    <a class="footer-brand" href="index.html">✦ Gatherly</a>
+    <p class="footer-urdu" lang="ur" dir="rtl">آؤ مل بیٹھیں، محفل سجائیں</p>
+    <p class="mb-1">Events • Chai • Community</p>
+    <p class="small mb-2">© 2026 Gatherly. All rights reserved.</p>
+    <a href="contact.html">Contact the Events Team</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gatherly - your campus mehfil: events, societies, chai and shayari.">
+  <title>Upcoming Events | Gatherly</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Rozha+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.svg" alt="Gatherly logo" class="brand-logo"> <span class="brand-text">Gatherly<small lang="ur" dir="rtl">محفل</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle ms-lg-3" type="button" onclick="toggleTheme()" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero"><div class="container"><span class="eyebrow">MARK YOUR CALENDAR</span><h1>Upcoming <em>Events</em></h1><p>Find your next campus experience — academic, cultural, sporting or career-focused.</p></div><img class="page-hero-deco" src="images/art/rickshaw.svg" alt="" aria-hidden="true"></header>
+<section class="container section-space">
+  <div class="filter-toolbar" role="group" aria-label="Filter events by category">
+    <button class="filter-btn active" type="button" data-filter="all">All Events</button><button class="filter-btn" type="button" data-filter="academic">Academic</button><button class="filter-btn" type="button" data-filter="cultural">Cultural</button><button class="filter-btn" type="button" data-filter="sports">Sports</button><button class="filter-btn" type="button" data-filter="career">Career</button>
+  </div>
+  <div class="row g-4" id="eventsGrid">
+    <div class="col-md-6 col-lg-4 event-item" data-category="academic"><article class="event-card"><img src="images/events/technology.svg" alt="Technology Week"><div class="event-card-body"><span class="category-tag tag-academic">ACADEMIC</span><p class="event-date">15 NOV 2026 · 10:00 AM</p><h3>Technology Week</h3><p>Innovation, coding competitions, workshops and inspiring ideas.</p><button class="btn btn-wine event-details" data-title="Technology Week" data-date="15 November 2026" data-time="10:00 AM" data-venue="University Main Hall" data-description="Join students and technology enthusiasts for coding competitions, hands-on workshops and innovation displays.">View Details</button></div></article></div>
+    <div class="col-md-6 col-lg-4 event-item" data-category="cultural"><article class="event-card"><img src="images/events/mushaira.svg" alt="Mushaira and Chai Night"><div class="event-card-body"><span class="category-tag tag-cultural">CULTURAL</span><p class="event-date">18 NOV 2026 · 7:00 PM</p><h3>Mushaira &amp; Chai Night</h3><p>An evening of Urdu poetry, live shayari and endless cups of kahwa under the campus sky.</p><button class="btn btn-wine event-details" data-title="Mushaira &amp; Chai Night" data-date="18 November 2026" data-time="7:00 PM" data-venue="Open Campus Grounds" data-description="Bring a verse, a friend and an appetite for chai. Students recite their own Urdu poetry and favourite couplets while kahwa, doodh patti and snacks keep the mehfil going.">View Details</button></div></article></div>
+    <div class="col-md-6 col-lg-4 event-item" data-category="cultural"><article class="event-card"><img src="images/events/cultural.svg" alt="Truck-art inspired Cultural Festival poster"><div class="event-card-body"><span class="category-tag tag-cultural">CULTURAL</span><p class="event-date">20 NOV 2026 · 11:00 AM</p><h3>Cultural Festival</h3><p>Celebrate Pakistani traditions, truck art, rickshaw parades, food and performances.</p><button class="btn btn-wine event-details" data-title="Cultural Festival" data-date="20 November 2026" data-time="11:00 AM" data-venue="University Grounds" data-description="Enjoy a campus celebration of culture with truck-art displays, decorated rickshaws, student performances, chai and food stalls and creative activities.">View Details</button></div></article></div>
+    <div class="col-md-6 col-lg-4 event-item" data-category="sports"><article class="event-card"><img src="images/events/sports.svg" alt="Sports Championship"><div class="event-card-body"><span class="category-tag tag-sports">SPORTS</span><p class="event-date">25 NOV 2026 · 9:00 AM</p><h3>Sports Championship</h3><p>Show your talent, support your team and enjoy the competition.</p><button class="btn btn-wine event-details" data-title="Sports Championship" data-date="25 November 2026" data-time="9:00 AM" data-venue="Sports Complex" data-description="Take part in exciting university sports competitions and cheer on your fellow students.">View Details</button></div></article></div>
+    <div class="col-md-6 col-lg-4 event-item" data-category="career"><article class="event-card"><img src="images/events/career.svg" alt="Career Fair"><div class="event-card-body"><span class="category-tag tag-career">CAREER</span><p class="event-date">30 NOV 2026 · 10:00 AM</p><h3>Career Fair</h3><p>Meet recruiters, explore opportunities and build connections.</p><button class="btn btn-wine event-details" data-title="Career Fair" data-date="30 November 2026" data-time="10:00 AM" data-venue="University Auditorium" data-description="Connect with employers and industry professionals, learn about career paths and explore opportunities.">View Details</button></div></article></div>
+  </div>
+  <p id="noEvents" class="text-center mt-4 d-none">No events found in this category.</p>
+</section>
+<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content event-modal"><div class="modal-header"><h2 class="modal-title fs-4" id="eventModalTitle">Event details</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><p><strong>Date:</strong> <span id="modalDate"></span></p><p><strong>Time:</strong> <span id="modalTime"></span></p><p><strong>Venue:</strong> <span id="modalVenue"></span></p><p id="modalDescription"></p></div><div class="modal-footer"><a href="contact.html" class="btn btn-wine">Ask About This Event</a></div></div></div></div>
+
+<div class="truck-stripe" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container text-center">
+    <a class="footer-brand" href="index.html">✦ Gatherly</a>
+    <p class="footer-urdu" lang="ur" dir="rtl">آؤ مل بیٹھیں، محفل سجائیں</p>
+    <p class="mb-1">Events • Chai • Community</p>
+    <p class="small mb-2">© 2026 Gatherly. All rights reserved.</p>
+    <a href="contact.html">Contact the Events Team</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

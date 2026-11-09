@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gatherly - your campus mehfil: events, societies, chai and shayari.">
+  <title>Resource Center | Gatherly</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Rozha+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.svg" alt="Gatherly logo" class="brand-logo"> <span class="brand-text">Gatherly<small lang="ur" dir="rtl">محفل</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle ms-lg-3" type="button" onclick="toggleTheme()" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero"><div class="container"><span class="eyebrow">PLAN IT. MAKE IT HAPPEN.</span><h1>Student <em>Resource Center</em></h1><p>Helpful information for students and societies organizing campus events.</p></div><img class="page-hero-deco" src="images/art/rickshaw.svg" alt="" aria-hidden="true"></header>
+<section class="container section-space">
+  <div class="section-heading"><span class="eyebrow text-emerald">YOUR EVENT TOOLKIT</span><h2>Everything in <em>one place.</em></h2><p>Choose a resource category below to get started.</p></div>
+  <ul class="nav nav-pills resource-tabs mb-4" id="resourceTabs" role="tablist">
+    <li class="nav-item" role="presentation"><button class="nav-link active" id="venue-tab" data-bs-toggle="pill" data-bs-target="#venue" type="button" role="tab">Venue Booking</button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link" id="rules-tab" data-bs-toggle="pill" data-bs-target="#rules" type="button" role="tab">Event Rules</button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link" id="forms-tab" data-bs-toggle="pill" data-bs-target="#forms" type="button" role="tab">Forms</button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link" id="faqs-tab" data-bs-toggle="pill" data-bs-target="#faqs" type="button" role="tab">FAQs</button></li>
+  </ul>
+  <div class="tab-content resource-panel">
+    <div class="tab-pane fade show active" id="venue" role="tabpanel" aria-labelledby="venue-tab"><h2>Venue Booking</h2><p>Societies and university departments can request suitable spaces for approved activities.</p><div class="row g-3"><div class="col-sm-6"><div class="resource-item">✦ University Auditorium</div></div><div class="col-sm-6"><div class="resource-item">✦ Main Conference Hall</div></div><div class="col-sm-6"><div class="resource-item">✦ Sports Complex</div></div><div class="col-sm-6"><div class="resource-item">✦ Open Campus Grounds</div></div></div><a href="contact.html" class="btn btn-wine mt-4">Request a Venue</a></div>
+    <div class="tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-tab"><h2>Event Organization Rules</h2><ol class="resource-list"><li>Submit event proposals before the planned event date.</li><li>Obtain approval from the relevant university department.</li><li>Respect university facilities, staff and fellow students.</li><li>Maintain safety and discipline throughout the activity.</li><li>Leave the venue clean and return borrowed equipment.</li></ol></div>
+    <div class="tab-pane fade" id="forms" role="tabpanel" aria-labelledby="forms-tab"><h2>Useful Forms</h2><p>Use the proposal page to submit your event idea. The following starter documents can be prepared by your department.</p><div class="resource-item mb-2">Event proposal — submit through <a href="contact.html">Contact & Event Proposal</a>.</div><div class="resource-item mb-2">Venue request — contact the Events Team for the official form.</div><div class="resource-item">Volunteer registration — contact the relevant society.</div></div>
+    <div class="tab-pane fade" id="faqs" role="tabpanel" aria-labelledby="faqs-tab"><h2>Frequently Asked Questions</h2><div class="accordion news-accordion" id="faqAccordion">
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">Who can organize an event?</button></h3><div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Registered student societies and authorized university departments can propose events.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">How can I request a venue?</button></h3><div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Submit your event proposal and contact the Events Team for venue availability and approval.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">Can students volunteer?</button></h3><div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. Contact a society or the Events Team to ask about volunteer opportunities.</div></div></div>
+    </div></div>
+  </div>
+</section>
+
+<div class="truck-stripe" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container text-center">
+    <a class="footer-brand" href="index.html">✦ Gatherly</a>
+    <p class="footer-urdu" lang="ur" dir="rtl">آؤ مل بیٹھیں، محفل سجائیں</p>
+    <p class="mb-1">Events • Chai • Community</p>
+    <p class="small mb-2">© 2026 Gatherly. All rights reserved.</p>
+    <a href="contact.html">Contact the Events Team</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gatherly - your campus mehfil: events, societies, chai and shayari.">
+  <title>Department News | Gatherly</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Rozha+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.svg" alt="Gatherly logo" class="brand-logo"> <span class="brand-text">Gatherly<small lang="ur" dir="rtl">محفل</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle ms-lg-3" type="button" onclick="toggleTheme()" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero"><div class="container"><span class="eyebrow">THE LATEST FROM CAMPUS</span><h1>News & <em>Announcements</em></h1><p>Fresh updates, important notices and highlights from our university community.</p></div><img class="page-hero-deco" src="images/art/rickshaw.svg" alt="" aria-hidden="true"></header>
+<section class="container section-space">
+  <div class="section-heading"><span class="eyebrow text-emerald">WHAT'S HAPPENING</span><h2>Department <em>bulletin.</em></h2></div>
+  <div class="accordion news-accordion" id="newsAccordion">
+    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#newsOne" aria-expanded="true">Annual Technology Week announced</button></h2><div id="newsOne" class="accordion-collapse collapse show" data-bs-parent="#newsAccordion"><div class="accordion-body"><strong>Technology Week is coming to campus.</strong> Students can look forward to coding challenges, practical workshops, innovation displays and guest sessions. Keep checking the Upcoming Events page for updates.</div></div></div>
+    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#newsTwo">Society registration is open</button></h2><div id="newsTwo" class="accordion-collapse collapse" data-bs-parent="#newsAccordion"><div class="accordion-body">Explore the Clubs and Societies Directory to find a community that matches your interests. Contact the relevant society for its registration process.</div></div></div>
+    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#newsThree">Sports festival coming soon</button></h2><div id="newsThree" class="accordion-collapse collapse" data-bs-parent="#newsAccordion"><div class="accordion-body">Get ready for team competitions, friendly matches and a celebration of campus spirit. Event details will be shared on the Upcoming Events page.</div></div></div>
+    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#newsFour">Mushaira &amp; Chai Night joins the lineup</button></h2><div id="newsFour" class="accordion-collapse collapse" data-bs-parent="#newsAccordion"><div class="accordion-body">Gatherly is hosting an open-mic evening of Urdu poetry with kahwa and doodh patti on 18 November. Students can sign up to recite their own verses or a favourite couplet. See the Upcoming Events page for details.</div></div></div>
+  </div>
+</section>
+<section class="container section-space pt-0">
+  <div class="section-heading"><span class="eyebrow text-emerald">THROUGH THE LENS</span><h2>Event <em>highlights.</em></h2></div>
+  <div id="eventCarousel" class="carousel slide editorial-carousel" data-bs-ride="carousel">
+    <div class="carousel-indicators"><button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button><button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button><button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button></div>
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="images/gallery/event1.svg" class="d-block w-100" alt="A hand-painted truck-art lorry under festival bunting"><div class="carousel-caption"><h3>Truck-art turn-up</h3><p>Colour, chains and a whole lot of horn.</p></div></div>
+      <div class="carousel-item"><img src="images/gallery/event2.svg" class="d-block w-100" alt="A decorated rickshaw parked under lanterns"><div class="carousel-caption"><h3>Rickshaw run</h3><p>Every campus ride begins with a story.</p></div></div>
+      <div class="carousel-item"><img src="images/gallery/event3.svg" class="d-block w-100" alt="A glowing chai dhaba with kettle and cups"><div class="carousel-caption"><h3>Chai ke saath</h3><p>Because the best ideas arrive over a cup.</p></div></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></button>
+  </div>
+</section>
+
+<div class="truck-stripe" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container text-center">
+    <a class="footer-brand" href="index.html">✦ Gatherly</a>
+    <p class="footer-urdu" lang="ur" dir="rtl">آؤ مل بیٹھیں، محفل سجائیں</p>
+    <p class="mb-1">Events • Chai • Community</p>
+    <p class="small mb-2">© 2026 Gatherly. All rights reserved.</p>
+    <a href="contact.html">Contact the Events Team</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

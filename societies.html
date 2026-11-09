@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gatherly - your campus mehfil: events, societies, chai and shayari.">
+  <title>Clubs & Societies | Gatherly</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Rozha+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.svg" alt="Gatherly logo" class="brand-logo"> <span class="brand-text">Gatherly<small lang="ur" dir="rtl">محفل</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="societies.html">Societies</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle ms-lg-3" type="button" onclick="toggleTheme()" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero"><div class="container"><span class="eyebrow">FIND YOUR COMMUNITY</span><h1>Clubs & <em>Societies</em></h1><p>Discover your interests, meet like-minded people and make campus life yours.</p></div><img class="page-hero-deco" src="images/art/rickshaw.svg" alt="" aria-hidden="true"></header>
+<section class="container section-space">
+  <div class="section-heading"><span class="eyebrow text-emerald">TECHNICAL</span><h2>Curious minds, <em>big ideas.</em></h2></div>
+  <div class="row g-4 mb-5">
+    <div class="col-md-4"><article class="society-card"><div class="society-icon">⌘</div><h3>Computing Society</h3><p>Explore programming, artificial intelligence, technology and innovation.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+    <div class="col-md-4"><article class="society-card"><div class="society-icon">⚙</div><h3>Robotics Club</h3><p>Build, experiment and learn through robotics and automation projects.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+    <div class="col-md-4"><article class="society-card"><div class="society-icon">✳</div><h3>Science Society</h3><p>Encourage research, scientific thinking and creative experiments.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+  </div>
+  <div class="section-heading"><span class="eyebrow text-emerald">ARTS & CULTURE</span><h2>Make room for <em>expression.</em></h2></div>
+  <div class="row g-4 mb-5">
+    <div class="col-md-4"><article class="society-card society-pink"><div class="society-icon">✿</div><h3>Arts Society</h3><p>Celebrate painting, truck art, design, photography and artistic expression.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+    <div class="col-md-4"><article class="society-card society-pink"><div class="society-icon">✧</div><h3>Drama Society</h3><p>Showcase acting, theatre, storytelling, mushaira and stage performance.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+    <div class="col-md-4"><article class="society-card society-pink"><div class="society-icon">♫</div><h3>Music Society</h3><p>Bring students together through music and live performances.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+  </div>
+  <div class="section-heading"><span class="eyebrow text-emerald">SPORTS & WELLBEING</span><h2>Play with <em>passion.</em></h2></div>
+  <div class="row g-4 mb-5">
+    <div class="col-md-4"><article class="society-card society-green"><div class="society-icon">⚽</div><h3>Football Club</h3><p>Train, compete and build teamwork through football.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+    <div class="col-md-4"><article class="society-card society-green"><div class="society-icon">🏏</div><h3>Cricket Club</h3><p>Develop your cricket skills and represent your university.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+    <div class="col-md-4"><article class="society-card society-green"><div class="society-icon">♥</div><h3>Community Service Club</h3><p>Support community projects, volunteering and social causes.</p><a href="contact.html" class="text-link">Get in touch ↗</a></article></div>
+  </div>
+</section>
+
+<div class="truck-stripe" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container text-center">
+    <a class="footer-brand" href="index.html">✦ Gatherly</a>
+    <p class="footer-urdu" lang="ur" dir="rtl">آؤ مل بیٹھیں، محفل سجائیں</p>
+    <p class="mb-1">Events • Chai • Community</p>
+    <p class="small mb-2">© 2026 Gatherly. All rights reserved.</p>
+    <a href="contact.html">Contact the Events Team</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
